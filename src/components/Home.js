@@ -1,11 +1,15 @@
 import React, { Suspense } from 'react';
-import { Canvas} from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment, PerspectiveCamera } from '@react-three/drei';
 import Spaceman from './Spaceman';
 
 const Home = () => {
     return (
-        <div className='bg-[#d45c78] relative' style={{ height: "100vh", display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className='bg-[#d45c78] relative h-screen flex items-center justify-center'>
+            <div className='absolute top-8 left-6'>
+                <h1 className='text-[#4b202a] text-4xl font-bold mb-6'>Sai Sarvanth Vedula</h1>
+                <h2 className='text-[#4b202a] text-3xl font-semibold'>Software Developer</h2>
+            </div>
             <Canvas>
                 <PerspectiveCamera makeDefault position={[0, 2, 5]} />
                 <ambientLight intensity={0.5}/>
